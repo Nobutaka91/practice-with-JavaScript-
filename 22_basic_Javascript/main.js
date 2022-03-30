@@ -6,5 +6,4 @@ btn.addEventListener('click', function (e){
     let headerTitle = document.getElementById('headerTitle');
     // テキストの置換
     headerTitle.textContent = 'タイトルが変更されました';
-
 }, false);
