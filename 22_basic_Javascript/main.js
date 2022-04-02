@@ -1,27 +1,21 @@
 'use strict';
 
-// Windowオブジェクトとは
-// ブラウザの画面に関係するプロパティやメソッドを束ねておく入れ物のようなもの。
-// グローバルオブジェクトのため、どこからでも呼び出せてすぐに使える。
+// const sayHelloButton = document.getElementById('sayHelloButton');
+// sayHelloButton.addEventListener('click',  (e) =>{
+//     console.log('Hello!');
+// }, false);
 
 
-// コンソール出力
-// window.console.log('Hello');
 
-// 警告表示
-// window.alert('Are you OK?');
+// 「イベントハンドラ」
+// イベントに対して行う処理のこと
+// 例) コンソールにHelloと出力する処理
 
-// 確認ダイアログ
-// window.confirm('Are you OK?');
 
-// 別のWindowを開く
-// window.open('https://www.google.co.jp');
+// 「イベントリスナ」
+// イベントとイベントハンドラを紐づけているもの
 
-// Windowを閉じる
-// window.close();
 
-// スクロール
-let btn = document.getElementById('triggerButton');
-btn.addEventListener('click', function (e) {
-    window.scroll(0, 300);
- }, false);
+// 「イベント駆動型プログラミング」(イベントドリブン)
+// 何らかの、イベントが発生したら、何らかのプログラミングが動作するようプログラミングを書く手法のことを指す
+
