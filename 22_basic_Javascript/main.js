@@ -1,20 +1,24 @@
 'use strict';
 
-// 名前の入力が完了したら
-// 「こんにちは〇〇さん。」と
-// コンソールに出力する
-
-
-// コールバック関数(名前の入力が完了した時に呼ばれる関数)
-function greeting(name) {
-    console.log('こんにちは' + name + 'さん');
+let num = 0;
+function updateCounter(n) {
+    const counter = document.getElementById('counter');
+    counter.textContent = n;
 }
 
-// 名前の入力をユーザーに促す関数を書く
-function inputUserName(callback) { 
-    let name = prompt('あなたのお名前を入力してください!');
-    callback(name);
+
+function countUp() {
+    num++;
+    updateCounter(num);
 }
 
-// inputUserNameを呼び出す
-inputUserName(greeting);
+function reset() {
+    num = 0;
+    updateCounter(num);
+ }
+
+countUpButton.addEventListener('click', countUp, false);
+resetButton.addEventListener('click', reset, false);
+
+
+
